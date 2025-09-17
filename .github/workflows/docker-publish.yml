@@ -3,7 +3,7 @@ name: Build and Push Docker image
 on:
   push:
     branches:
-      - main   # adapte si ta branche principale est "master"
+      - master   # adapte si ta branche principale est "master"
 
 jobs:
   build:
