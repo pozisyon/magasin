@@ -17,7 +17,7 @@ services:
       - product-net
 
   api-magasin:
-    image: tchenn/magasin-api:latest
+    image: tchenn/magasin-api:latest #build: .
     container_name: magasin
     depends_on:
       - postgres

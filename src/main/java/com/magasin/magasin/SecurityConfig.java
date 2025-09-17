@@ -12,7 +12,7 @@ public class SecurityConfig {
         http
                 .csrf(csrf -> csrf.disable())          // désactive CSRF (utile pour tests API)
                 .authorizeHttpRequests(auth -> auth
-                        .anyRequest().permitAll()           // autorise toutes les requêtes
+                        .anyRequest().authenticated()          // autorise toutes les requêtes
                 );
 
         return http.build();
